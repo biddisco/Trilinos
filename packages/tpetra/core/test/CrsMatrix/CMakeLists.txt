@@ -117,11 +117,12 @@ TRIBITS_COPY_FILES_TO_BINARY_DIR(CrsMatrixCopyFiles1
   EXEDEPS CrsMatrix_UnitTests
   )
 
-ASSERT_DEFINED(Anasazi_SOURCE_DIR)
-TRIBITS_COPY_FILES_TO_BINARY_DIR(CrsTests_CopyFiles2
-  SOURCE_DIR ${Anasazi_SOURCE_DIR}/testmatrices
-  SOURCE_FILES bcsstk14.hb
+if (Anasazi_SOURCE_DIR)
+  TRIBITS_COPY_FILES_TO_BINARY_DIR(CrsTests_CopyFiles2
+    SOURCE_DIR ${Anasazi_SOURCE_DIR}/testmatrices
+    SOURCE_FILES bcsstk14.hb bcsstk15.hb
   )
+endif()
 
 # This test only makes sense for > 1 processes.
 TRIBITS_ADD_EXECUTABLE_AND_TEST(
