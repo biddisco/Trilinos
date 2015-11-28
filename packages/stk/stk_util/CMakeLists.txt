@@ -1,8 +1,0 @@
-INCLUDE(TribitsPackageMacros)
-INCLUDE(TribitsSubPackageMacros)
-
-TRIBITS_SUBPACKAGE(Util)
-
-ADD_SUBDIRECTORY(stk_util)
-
-TRIBITS_SUBPACKAGE_POSTPROCESS()
