@@ -67,7 +67,7 @@ INCLUDE(${CMAKE_CURRENT_SOURCE_DIR}/ProjectName.cmake)
 
 # CMake requires that you declare the CMake project in the top-level file and
 # not in an include file :-(
-PROJECT(${PROJECT_NAME} NONE)
+PROJECT(${PROJECT_NAME})
 
 # Set default C++ standard to C++11
 SET(Trilinos_ENABLE_CXX11_DEFAULT ON)
