@@ -1,0 +1,11 @@
+.gitignore
+claps
+epetra
+kokkos
+teuchos
+thyra
+tpetra
+Trilinos_DLLExportMacro.h.in
+xpetra
+zoltan
+zoltan2
